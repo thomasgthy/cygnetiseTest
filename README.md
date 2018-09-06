@@ -13,9 +13,11 @@ After cloning the repository, you may need to run the following command at the r
 
 * Database set up  
 Following are the steps to set up the database(from the root directory):
-```bin/rails db:create```
-```bin/rails db:migrate```
-```bin/rails data:import``` (This step should take few seconds as the data is heavy)
+	```ruby
+	bin/rails db:create
+	bin/rails db:migrate
+	bin/rails data:import (This step should take few seconds as the data is heavy)
+	```
 
 * How to run the test suite
 
