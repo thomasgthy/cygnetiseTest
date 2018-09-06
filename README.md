@@ -9,7 +9,9 @@ The project has been developed with Ruby 2.4.1 and Rails 5.1.6
 
 * Configuration  
 After cloning the repository, you may need to run the following command at the root directory:
-```bundle install```
+	```ruby
+	bundle install
+	```
 
 * Database set up  
 Following are the steps to set up the database(from the root directory):
