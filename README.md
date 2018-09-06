@@ -4,14 +4,14 @@ This README will describe how I have constructed this technical exercise.
 The task was to create a Rails app that will import data from a TV SMS voting campaigns into the
 database and display the results by campaigns then candidates.
 
-* Ruby version
+* Ruby version  
 The project has been developed with Ruby 2.4.1 and Rails 5.1.6
 
-* Configuration
+* Configuration  
 After cloning the repository, you may need to run the following command at the root directory:
 ```bundle install```
 
-* Database set up
+* Database set up  
 Following are the steps to set up the database(from the root directory):
 ```bin/rails db:create```
 ```bin/rails db:migrate```
@@ -20,7 +20,7 @@ Following are the steps to set up the database(from the root directory):
 * How to run the test suite
 
 
-* Model description
+* Model description  
 I choose to define 3 models that will be describe the behavior of the application.
 	* Campaign Model
 	The campaign model is responsible of one campaign in the TV SMS vote.
@@ -40,11 +40,11 @@ I choose to define 3 models that will be describe the behavior of the applicatio
 	There is a has_many association between Candidate and Vote which means 1 candidate
 	could have many votes.
 
-* Controller description
+* Controller description  
 There is 1 main controller that get the data from the model:
 	* Campaign controller which delivers all campaigns and a specific campaign informations to the view.
 
-* View description
+* View description  
 Concerning the view, there are 2 main views:
 	* Campaign index view which renders all available campaigns
 	* Campaign show view which renders one of the campaigns. This one is more complex as
@@ -52,7 +52,7 @@ Concerning the view, there are 2 main views:
 	show view and renders the content of the vote(candidate name, votes count, uncorrect votes). This template
 	rendering splits the view in two: the header of the view which is generic to all campaign and the content of the view which depends on the campaign.
 
-* Parser description
+* Parser description  
 To parse the log file, I choose to read line by line the txt file and for each line:
 	* Validate the encoding of the line
 	* Parse the line by space
