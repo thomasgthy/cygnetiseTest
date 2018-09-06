@@ -22,11 +22,11 @@ Following are the steps to set up the database(from the root directory):
 
 * Model description  
 I choose to define 3 models that will be describe the behavior of the application.
-	* Campaign Model
+	* Campaign Model  
 	The campaign model is responsible of one campaign in the TV SMS vote.
 	It stores a unique id and a unique campaign name.
 
-	* Candidate Model
+	* Candidate Model  
 	The candidate model is responsible of a candidate from one campaign.
 	It stores a unique id and a name of the candidate.
 	Note that the name of the candidate is not unique  because the same candidate 
@@ -34,7 +34,7 @@ I choose to define 3 models that will be describe the behavior of the applicatio
 	There is a has_many association between Campaign and Candidate which means
 	1 campaign could have many candidates.
 
-	* Vote model
+	* Vote Model  
 	The vote model is responsible of one vote for a candidate from one campaign.
 	It stores a unique id, a validity status, and an epoch time.
 	There is a has_many association between Candidate and Vote which means 1 candidate
@@ -46,8 +46,8 @@ There is 1 main controller that get the data from the model:
 
 * View description  
 Concerning the view, there are 2 main views:
-	* Campaign index view which renders all available campaigns
-	* Campaign show view which renders one of the campaigns. This one is more complex as
+	* Campaign index view which renders all available campaigns  
+	* Campaign show view which renders one of the campaigns. This one is more complex as  
 	it includes an additional template rendered in the view. This template comes from the candidate
 	show view and renders the content of the vote(candidate name, votes count, uncorrect votes). This template
 	rendering splits the view in two: the header of the view which is generic to all campaign and the content of the view which depends on the campaign.
