@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+<h2>Campaign: <%= @campaign.name %></h2>
+<table style="width:100%">
+	<tr>
+		<th>Candidate Name</th>
+	    <th>Number of votes</th>
+	    <th>Percentage of votes</th>
+	    <th>Number of incorrect votes</th>
+	    <th>Percentage of incorrect votes</th>
+	</tr>
+	<% @campaign.candidates.each do |candidate| %>
+  		<%= render template: "candidates/show", :locals => {candidate: candidate, campaign: @campaign} %>
+	<% end %>
+</table>
