@@ -23,6 +23,12 @@ Following are the steps to set up the database(from the root directory):
 
 * How to run the test suite
 
+* Description of my approach  
+After reading the test description, I have first thinking about the data model.
+I have quickly highlighted 3 models: Campaign, Candidate and Vote that will describe the
+application.
+Then I have started setting up the app by creating the database, the migration file and the model.
+Finally, I have worked on the controller and the views.
 
 * Model description  
 I choose to define 3 models that will be describe the behavior of the application.
