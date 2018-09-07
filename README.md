@@ -21,7 +21,11 @@ Following are the steps to set up the database(from the root directory):
 	bin/rails data:import (This step should take few seconds as the data is heavy)
 	```
 
-* How to run the test suite
+* Run test suite
+To run the tests, run the following command from the root directory:
+	```ruby
+	bin/rails test
+	```
 
 * Description of my approach  
 After reading the test description, I have first thinking about the data model.
