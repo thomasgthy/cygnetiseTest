@@ -7,7 +7,7 @@ class CampaignTest < ActiveSupport::TestCase
 	  assert_not campaign.save
 	end
 
-	test "should save campaign without name" do
+	test "should save campaign with name" do
 	  campaign = Campaign.new(name: "campaign_1")
 	  assert campaign.save
 	end

@@ -6,7 +6,7 @@ class VoteTest < ActiveSupport::TestCase
 	  assert_not vote.save
 	end
 
-	test "should save campaign without title" do
+	test "should save campaign with epoch_time, validity" do
 	  vote = Vote.new(epoch_time: "123476193", validity: "during")
 	  assert vote.save
 	end
